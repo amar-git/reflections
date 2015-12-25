@@ -1,0 +1,118 @@
+# Reflections in relation to the lesson 1 for the Udacity course
+# How to Use Git and GitHub
+
+In this lesson so far, I have learnt how to use the FC
+and diff commands for windows and unix like command line
+utilities for comparing two given files.
+
+The file which is specified first is used as base file
+while the second file is treated as the latest version
+and then comparision is done.
+
+While using the FC command in windows command prompt, we
+get a more succint and cleaner comparision, highlighting
+only the differences which occur in the files, whereas
+diff utility shows the entire file contents and differences
+are shown prefixed with a '-' or '+' sign for the deleted
+or added content respectively.
+
+Both commands provide a mechanised alternative for comparing
+the contents of the files in context, which could easily
+take several minutes if performed manually.
+
+Q.	How did viewing a diff between two versions of a file help
+	you see the bug that was introduced?
+
+A.	Using FC or diff was a new experience for me and it made
+	the task of comparing two files very efficient. All the
+	differences were shown preceeded with '-' and '+' signs
+	for deleted and added content respectively. While scanning
+	through the file, it was obvious to look for these lines
+	and observe any typo or anomaly.
+	Narrowing down the search area and pin-pointing the areas
+	of concern was the primary task which made the whole process
+	easy to go.
+
+Q.	How could having easy access to the entire history of a file
+	make you a more efficient programmer in the long term?
+
+A.	Entire history stored as we build a program gives us a
+	chance to view the progress and keeps an account of the
+	build process. Many times we try to improve the functionality
+	and in doing so, break the code or render it unusable and
+	if we've access to the history of our entire project, we
+	can go back to vesion where it has been working fine and
+	import the relevant code, data or reuse that entire version.
+	In long term, when the program will be built by a team, rather
+	an indivisual, accessibilty to history is going to be
+	very useful as chances of disagreement or breaking the code
+	increase when a lot of persons with different attitude and
+	style collaborate. Different coding style can also be a
+	check point to revisit the history in order to select the
+	most appropriate style if used in the prior versions.
+
+Q.	What do you think are the pros and cons of manually choosing
+	when to create a commit, like you do in Git, vs having
+	versions automatically saved, like Google Docs does?
+A.	First we'll discuss pros and cons of automatically saved versions.
+	Saving versions of a file automatically through some algorithm
+	can be very useful when we are working on a feature or product
+	where necessity of clubbnig logical changes isn't much needed.
+	It also eradicates the possibility of forgetting to save the
+	work and loose it altogether. As per the cons of saving
+	versions automatically, over the time our history will be
+	cluttered with various versions of the file. Having too much
+	versions of the same file might defeat the purpose of vesions
+	as there might be versions with not so much significant difference
+	in them.
+	Manually saving the verions of a file or choosing when to commit
+	can be very fruitful if applied in a thoughtful manner. Biggest
+	advantage of choosing when to commit is to club all the logical
+	changes in a single commit or version. It also gives the freedon
+	to choose what size of diff or commit one wants to keep. There
+	are few disadvantages to this approach. Manually saving versions
+	of a file can be costly if a person forgets to do the same and
+	saves too soon or too late. Levels and contents of same commits
+	may differ person to person since its a judgemental call.
+
+Q.	Why do you think some version control systems, like Git, allow saving
+	multiple files in one commit, while others, like Google Docs,
+	treat each file separately?
+A.	Git being code oriented saves multiple files in each commit as
+	auxilliary files might be updated simulataneously which are 
+	directly associated with the main or parent file, while other
+	versions like Google Docs are not particularly code oriented
+	which makes them work differently and saving each file everytime
+	will unneccessarily be an extra burden on their servers.
+
+Q.	How can you use the commands git log and git diff to view the
+	history of files?
+A.	Once in a repository directory, we can use git log command to
+	view all the commits and their ids, it also displays the associated
+	message. We can track the commit and then use its id and the id
+	of previous commit (which is below it) to see the differences
+	in both the versions by using git diff <previous_commit_id> 
+	<current_commit_id>.
+
+Q.	How might using version control make you more confident to make changes
+	that could break something?
+A.	While using the command git checkout <commit id>, it make me feel
+	the confidence of doing some mistake without worrying too much
+	about the code getting broken. So, if we keep on introducing changes
+	and after checking the performance its found that the code is
+	broken or not working as intended, then the command git checkout
+	is very handy and useful. We can switch to the commit/state
+	when the code was working perfectly or do some experiments on that
+	state. We can even find the bug by using git diff command on
+	the buggy commit and the one before it, to checkout what's
+	causing that bug.
+
+Q.	Now that you have your workspace set up, what do you wnat to try
+	using Git for?
+A.	The primary reason which prompted me to learn Git and GitHub was
+	the mention of this course in one of the Udacity course which I'm
+	keen to finish, Android Developer Course.
+	I sincerely believe that this skill of version control will be very
+	useful for me in the times to come as a programmer and in general
+	day to day life.
+

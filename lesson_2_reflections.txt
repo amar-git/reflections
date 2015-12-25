@@ -50,3 +50,12 @@ A.	Situations in which branches would help could be:
 	ready, we can always merge in the master branch to take the change place
 	in it.
 
+Q.	How to the diagrams help you visualize the branch structure?
+A.	The branch structure can be accessed using the following command:
+	git log --graph --oneline <branch_first> <branch_second>
+	It represents the log in a sort of diagram. Here we can see the master
+	branch and the sub branches getting separated out of it and if there are
+	any commits made in the master branch after separating the sub branch, then
+	those are shown appropriately. It gives a visual account of all the
+	branches and their commits.
+

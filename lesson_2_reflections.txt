@@ -1,0 +1,23 @@
+# Reflections from lesson 2
+
+Q.	What happens when you initialize a repository? Why do you need to do it?
+A.	First of all to initialize the git repository we run a command git init in
+	concerned directory. When we initialize the repository it creates a hidden
+	directory .git in the parent directory. This .git hidden folder or
+	directory is used to store the various verions or commits that a user make.
+	After its initialization we can run a command git status to see the current
+	status of the repository. It actually contains nothing, i.e. the number of
+	commits is zero and shows that it has n number of untracked files. We need
+	to do this in order to be able to store various versions or commits of the
+	file whenever required.
+
+Q.	How is the staging area different from the working directory and the
+	repository? What value do you think it offers?
+A.	Staging area holds temporarily all the files that one might be interested
+	in clubbing for a single commit. Is gives the choice of putting files
+	together with a single logical change. Staging area lies in between the
+	working directory and the repository. Once we are sure enough to commit,
+	we can move all the file in the staging area to the repository and add a
+	related commit message.
+	Staging are offers a great way to organise files and apply judgemenal call
+	that is required in order to make version control efficient and succint.

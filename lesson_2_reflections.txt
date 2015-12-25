@@ -37,3 +37,16 @@ A.	In order to keep a check on the commits being committed by clubbing a
 	to the staged area, it contains file of the recent commit) and then before
 	committing, we can see whether file being committed correspond to the single
 	logical change or not.
+
+Q.	What are some situations when branches would be helpful in keeping your
+	history organized? How would branches help?
+A.	Situations in which branches would help could be:
+	Experimental feature addition, version of the website in another language,
+	working to modify some feature while keeping the master branch intact, etc.
+	All these situations can be easily handled by using sub branches as they
+	do not affect the master branch and we can keep the master branch as it is
+	to show someone like client or keep it running if its already deployed.
+	Branches will keep the code separte from the master branch and when its
+	ready, we can always merge in the master branch to take the change place
+	in it.
+

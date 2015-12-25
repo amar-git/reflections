@@ -21,3 +21,19 @@ A.	Staging area holds temporarily all the files that one might be interested
 	related commit message.
 	Staging are offers a great way to organise files and apply judgemenal call
 	that is required in order to make version control efficient and succint.
+
+Q.	How can you use the staging area to make sure you have one commit per logical
+	change?
+A.	In order to keep a check on the commits being committed by clubbing a 
+	single logical change, we can make use of staging area. When we add a file
+	to the staging area, we can use the command git diff to see the differences
+	between the files currently in the working directory and the staging area.
+	And before committing we can do the same for the files in staging area and
+	the recent commit in the repository by using the command git diff --staged.
+	git diff --staged show us all the files which have been modified and stored
+	in the staged area, it doesn't show the files which had been modified but
+	not added to the staged area. So in this way we can track which files were
+	modified from working directory to the staged area (before adding any file
+	to the staged area, it contains file of the recent commit) and then before
+	committing, we can see whether file being committed correspond to the single
+	logical change or not.

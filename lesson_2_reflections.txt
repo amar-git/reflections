@@ -72,3 +72,15 @@ A.	When we merge two branches together then all the contents of the branch
 	then in both the branches. It also helps us see the commit messages and
 	decide what changes could have been made before using diff on any commit.
 
+Q.	What are the pros and cons of Git's automatic merging vs. always doing
+	merges manually?
+A.	When Git doesn't show any conflict, it's safe to use automatic merging, and
+	automatic merging takes care of updating the code with due consideration of
+	the branch being merged and the master brach (the one which is checkedout).
+	If we always go for manual merging, it might be very long to observe the 
+	differences and merge them into the master branch. All the updations and 
+	deletions have to be taken care of. So, we can say if no conflict arises, its
+	for best that we let Git merge the branches automatically, as going through
+	each branch and taking note of additions and deletions, will be very cumber-
+	some.
+

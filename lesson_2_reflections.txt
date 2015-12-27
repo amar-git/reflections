@@ -59,3 +59,16 @@ A.	The branch structure can be accessed using the following command:
 	those are shown appropriately. It gives a visual account of all the
 	branches and their commits.
 
+Q.	What is the result of merging two branches together? Why do we represent
+	it in the diagram the way we do?
+A.	When we merge two branches together then all the contents of the branch 
+	which is checkedout are upgraded with the contents of the sub branch. 
+	Git uses an algorithm which checks the parent commit from which the sub
+	branch was initiated and then it loooks for the current status of both the
+	branches, i.e. what was deleted since then in the master branch and sub 
+	branch and what was added. Based on this the master branch is updated.
+	By representing it in the diagram the way we do helps us visualize the
+	parent of the sub branch and the number of commits that we have made since
+	then in both the branches. It also helps us see the commit messages and
+	decide what changes could have been made before using diff on any commit.
+

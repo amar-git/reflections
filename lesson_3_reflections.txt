@@ -1,6 +1,17 @@
+# Lesson 3 reflections
+
 Q.  When would you want to create a remote repository rather than keeping all your work local?
 A.  There are many benefits of creating remote repository rather than keeping all the work
     local. First of all we can access it from any computer, rather than worring about keeping
     the work in a thumbdrive or so. Anyone who's working on the project can access the repository
     remotely and contribute the changes to it. If we're working locally, even then it's very easy
     to push the changes with recent commits to the remote repository.
+
+Q.	Why might you want to always pull changes manually rather than having Git
+	automatically stay up-to-date with your remote repository?
+A.	Pulling changes manually gives a better control over using network connection
+	to get this done. Setting it automatically may not work if there are any 
+	network issues. This can also be the case, when there're actually no changes
+	being made over GitHub repository, while Git is constantly try to update it.
+	So we can avoid the unneccessory network access.
+

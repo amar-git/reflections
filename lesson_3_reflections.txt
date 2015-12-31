@@ -15,3 +15,14 @@ A.	Pulling changes manually gives a better control over using network connection
 	being made over GitHub repository, while Git is constantly try to update it.
 	So we can avoid the unneccessory network access.
 
+Q.	Describe the differences between forks, clones, and branches. When would you use
+	one instead of another?
+A.	Forks are used to create a clone of any repository (public) on GitHub to own
+	GitHub repositories.
+	Clone is used to make a copy of repositories on the local working directory from
+	a GitHub repository.
+	Branches are created in a Git repository in order to work on a separate feature
+	without making any breakable changes in the master branch. Branches can be created in both places, whether it's a Git or GitHub repository.
+	When we want to create a copy on an online GitHub repository to another GitHub
+	account, we'll Fork it; if we want to create a copy of it on a local machine,
+	we'll clone it. At the time when we require to add some feature do some experiments on the existing project, we can use brach to achieve the same.
